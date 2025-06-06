@@ -16,7 +16,7 @@ function contient_cyrillique($texte) {
 }
 
 function est_numero_valide($numero) {
-    return preg_match('/^(06|07|\+336|\+337)\d{8}$/', $numero);
+    return preg_match('/^(01|09|06|07|\+336|\+337)\d{8}$/', $numero);
 }
 
 $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8');
@@ -63,18 +63,18 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('contact@webprime.fr', 'IDF 94');
-    $mail->addAddress('contact.assainissement@gmail.com');
+    $mail->setFrom('contact@webprime.fr', 'IDF 95');
+    $mail->addAddress('info.assainissement@gmail.com');
     $mail->addAddress('webprime91@hotmail.com');
     $mail->CharSet = 'UTF-8';
     $mail->isHTML(true);
-    $mail->Subject = 'Formulaire 94';
+    $mail->Subject = 'Formulaire 95';
     $mail->Body    = nl2br($message);
     $mail->AltBody = $message;
 
     $mail->send();
 
-    header('Location: https://assainissement-77.com/');
+    header('Location: https://assainissement95.com/');
     exit();
 } catch (Exception $e) {
     echo "Message non envoyé. Erreur Mailer: {$mail->ErrorInfo}";
