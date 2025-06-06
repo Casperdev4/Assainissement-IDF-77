@@ -139,7 +139,7 @@
         <section>
             <h2 id="realisation">RÉALISATIONS</h2>
             <div class="realisation-pc">
-                <img src="chantier-assainissement-77.webp"bac dégraisseur fosse septique" title="bac dégraisseur fosse septique"
+                <img src="chantier-assainissement-77.webp" alt="bac dégraisseur fosse septique" title="bac dégraisseur fosse septique"
                     loading="lazy" decoding="async">
                 <img src="entreprise-travaux-assainissement-77.webp" alt="camera canalisation" title="camera canalisation"
                     loading="lazy" decoding="async">
@@ -257,8 +257,7 @@
                 </h6>
             </div>
         </div>
-        <div class="contact-icon"><a href="tel:+33173112734" title="vidange bac a graisse 77 Seine-et-Marne">06 58 44 42
-                71</a></div>
+        <div class="contact-icon"><a href="tel:+33173112734" title="vidange bac a graisse 77 Seine-et-Marne">01 73 11 27 34</a></div>
     </footer>
     <script>
         const list = document.querySelectorAll('.list');
@@ -280,39 +279,6 @@
                 });
             });
         });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.5
-            };
-
-            function observeStep(entry, observer) {
-                entry.target.classList.add('slide-in-done');
-                observer.unobserve(entry.target);
-            }
-
-            function createObserver(element) {
-                var observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            observeStep(entry, observer);
-                        }
-                    });
-                }, observerOptions);
-
-                observer.observe(element);
-            }
-
-            // Observer chaque élément .valeur
-            var elements = document.querySelectorAll('.valeur');
-            elements.forEach(function (element) {
-                createObserver(element);
-            });
-        });
-
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -344,7 +310,7 @@
                 alert("Champs obligatoires.");
                 return false;
             }
-            var telPattern = /^(06|07|\+336|\+337)\d{8}$/;
+            var telPattern = /^(01|09|06|07|\+336|\+337)\d{8}$/;
             if (!telPattern.test(tel)) {
                 alert("Veuillez entrer un numéro de téléphone valide.");
                 return false;
