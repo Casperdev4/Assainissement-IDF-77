@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(python update_forms.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nMise a jour formulaires avec webhook WebPrime\n\n- Remplacement de FormSubmit.co par webhook WebPrime\n- Ajout fonction submitToWebPrime avec fetch API\n- Correction accents dans les values \\(compatibilite JS\\)\n- Honeypot anti-spam avec _gotcha\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rebase:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAjout sections FAQ sur toutes les pages principales\n\n- Ajout CSS pour FAQ accordion \\(HTML/CSS pur\\)\n- FAQ page index : questions generales assainissement\n- FAQ page entreprise : presentation societe\n- FAQ page devis : tarifs et paiement\n- FAQ page debouchage : causes et techniques\n- FAQ page camera : fonctionnement inspection\n- FAQ page bac a graisse : entretien et reglementation\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}
